@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eos II Telemetry</title>
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+
+	<script language="javascript" type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.threshold.js"></script>
+	<script language="javascript" type="text/javascript" src="c3telem.js"></script>
+	<script language="javascript" type="text/javascript" src="battery.js"></script>
+	<script language="javascript" type="text/javascript" src="jTelem.js"></script>
+
+	<!--OSM-->
+	<script src="maps/OpenLayers.js"></script>
+	<script src="maps/OpenStreetMap.js"></script>
+	
+  </head>
+
+  <body>
+    <div class="container">
+	
+		<div id="statusbar">
+			<div id="statusbar-left">
+				<div class="site-title">
+				Eos II Telemetry
+				</div>
+			</div>
+			<div id="statusbar-right">
+				<div class="connected">
+					Connected
+				</div>
+				<div class="disconnected">
+					Disconnected (<span id="lag">0.0</span> sec)
+				</div>
+				<div id="server-time">
+					Received no CAN packets
+				</div>
+			</div>
+		</div>
+		
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#main" data-toggle="tab">Main</a></li>
+			<li><a href="#battery" data-toggle="tab">Battery</a></li>
+            <li><a href="#checklist" data-toggle="tab">Checklist</a></li>
+			<li><a href="#can" data-toggle="tab">CAN Packets</a></li>
+			<li><a href="#cande" data-toggle="tab">CAN Decoder</a></li>
+			<li><a href="#map" data-toggle="tab">Map</a></li>
+		</ul>
+		
+		<div class="tab-content">
+		
+		
+		<div class="tab-pane active" id="main">
+			<div class="row">
+				<div class="span4"><!--LEFT COL-->
+				<div class="box">
+					<h2>Dashboard</h2>
+					<table>
+						<tr>
+							<th>Speed</th><td><span class="data-speed">-</span> kph</td>
+						</tr>
+						<tr>
+							<th>Target Speed</th><td id="send-speedset"><span class="data-targetspeed">-</span> kph</td>
+						</tr>
+						<tr>
+							<th>Accelerator</th><td><span class="data-accelerator">-</span> %</td>
+						</tr>
+						<tr>
+							<th>Regen Brake</th><td><span class="data-regen">-</span> %</td>
+						</tr>
+						<tr>
+							<th>Direction</th><td><span class="data-direction"></span></td>
+						</tr>
+						<tr>
+							<th>Blinkers</th><td><span class="data-blinkers"></span></td>
+						</tr>
+						<tr>
+							<th>Drive</th><td><span class="data-drive">-</span> %</td>
+						</tr>
+                    </table>
+                   				
+					<h3>Speed/Accelerator</h3>
+					<div id="graph-speed" class="graph-normal"></div>
+					<div id="graph-drive" class="graph-normal"></div>
+					<h3>DI Switches</h3>
+					<span class="data-di-hazards">Hazard</span>
+					<span class="data-di-boosh">Boosh</span>
+					<span class="data-di-cruise">Cruise</span>
+                    <span class="data-di-magic1">Magic1</span>
+                    <span class="data-di-magic2">Magic2</span>
+					<span class="data-di-console">Debug</span>
+                    <h3>Flags</h3>
+                    <span class="data-mechbrakes">Mech Brakes</span>
+                    <span class="data-anybrakes">Brake Lights</span>
+				</div>
+				
+				</div>
+				<!-- END LEFT COL -->
+				<!-- START MIDDLE COL -->
+				<div class="span4">
+				<!--
+				<div class="span4 box">
+					<h2>Tritium</h2>
+						<table>
+						<tr>
+							<th>Air Intake</th><td><span class="data-tritium-airin">0</span> C</td>
+							<th>Processor Temp</th><td><span class="data-tritium-processor">0</span> C</td>
+							<th>Processor Temp</th><td><span class="data-tritium-processor">0</span> C</td>
+
+						</tr>
+						</table>
+
+				</div>
+				-->
+				
+				<div class="box">
+					<h2>Battery</h2>
+					<table>
+						<tr>
+							<th>State of Charge</th><td><span class="data-batt-soc-pcnt">-</span> %</td>
+						</tr>
+						<tr>
+							<th>Remaining Charge</th><td><span class="data-batt-soc">-</span> Ah</td>
+						</tr>
+						<tr>
+							<th>Min Cell</th><td><span class="data-batt-mincell">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Max Cell</th><td><span class="data-batt-maxcell">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Min Temp</th><td><span class="data-batt-mintemp">-</span> C</td>
+						</tr>
+                        <tr>
+							<th>Max Temp</th><td><span class="data-batt-maxtemp">-</span> C</td>
+						</tr>
+						<tr>
+							<th>Pack Voltage</th><td><span class="data-batt-voltage">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Primary Power</th><td><span class="data-batt-primarypower">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Aux Power</th><td><span class="data-batt-auxpower">-</span> V</td>
+						</tr>
+                        <tr>
+							<th>Current</th><td><span class="data-batt-current">-</span> A</td>
+						</tr>
+						<tr>
+							<th>Power</th><td><span class="data-batt-power">-</span> W</td>
+						</tr>
+						<tr>
+							<th>Ave Power</th><td><span class="data-ave-batt-power">-</span> W</td>
+						</tr>
+					</table>
+                    <h3>Current</h3>
+					<div id="graph-current" class="graph-normal"></div>
+                    <h3>Contactors</h3>
+                    <span class="data-contactor-buspre">BUS-PRE</span>
+                    <span class="data-contactor-bus">BUS</span>
+                    <span class="data-contactor-trackerpre">TKR-PRE</span>
+                    <span class="data-contactor-tracker">TKR</span>
+				</div>
+                
+                <div class="box">
+                    <h2>Wavesculptors</h2>
+                    <table>
+						<th><h3>Parameter</h3></th><th><h3>Left</h3></th><th><h3>Right</h3></th>
+                        <tr>`
+                            <th>Errors</th><td><span class="data-wsl-error-flags">-</span></td><td><span class="data-wsr-error-flags">-</span></td>
+                        </tr>						
+                        <tr>
+                            <th>iq</th><td><span class="data-wsl-iq">-</span> A</td><td><span class="data-wsr-iq">-</span> A</td>
+                        </tr>
+                        <tr>
+                            <th>id</th><td><span class="data-wsl-id">-</span> A</td><td><span class="data-wsr-id">-</span> A</td>
+                        </tr>
+						<tr>
+                            <th>vq</th><td><span class="data-wsl-vq">-</span> V</td><td><span class="data-wsr-vq">-</span> V</td>
+                        </tr>
+                        <tr>
+                            <th>vd</th><td><span class="data-wsl-vd">-</span> V</td><td><span class="data-wsr-vd">-</span> V</td>
+                        </tr>
+						<tr>
+                            <th>bemfq</th><td><span class="data-wsl-bemfq">-</span> V</td><td><span class="data-wsr-bemfq">-</span> V</td>
+                        </tr>
+						<tr>
+                            <th>bemfd</th><td><span class="data-wsl-bemfd">-</span> V</td><td><span class="data-wsr-bemfd">-</span> V</td>
+                        </tr>
+						<tr><th> </th></tr>
+						<tr>
+                            <th>Bus Current</th><td><span class="data-wsl-bus-current">-</span> A</td><td><span class="data-wsr-bus-current">-</span> A</td>
+                        </tr>
+						<tr>
+                            <th>Bus Voltage</th><td><span class="data-wsl-bus-voltage">-</span> V</td><td><span class="data-wsr-bus-voltage">-</span> V</td>
+                        </tr>
+						<tr><th> </th></tr>
+						<tr>
+                            <th>Heatsink Temp</th><td><span class="data-wsl-heatsink-temp">-</span> C</td><td><span class="data-wsr-heatsink-temp">-</span> C</td>
+                        </tr>
+						<tr>
+                            <th>Motor Temp</th><td><span class="data-wsl-motor-temp">-</span> C</td><td><span class="data-wsr-motor-temp">-</span> C</td>
+                        </tr>
+                    </table>
+					
+					<h3>Computed Parameters</h3>
+					<table>
+						<tr>
+                            <th>Bus Power</th><td><span class="data-wsl-bus-power">-</span> W</td><td><span class="data-wsr-bus-power">-</span> W</td>
+                        </tr>
+						<tr>
+                            <th>Ave Bus Power</th><td><span class="data-wsl-ave-bus-power">-</span> W</td><td><span class="data-wsr-ave-bus-power">-</span> W</td>
+                        </tr>
+						<tr>
+							<th>Total Ave Bus Power</th><td><span class="data-ws-ave-bus-power">-</span> W</td>
+						</tr>
+					</table>
+                </div>
+				
+				
+				</div>
+				<!--END MIDDLE COL-->
+				<!--START RIGHT COL -->
+				
+				<div class="span4">
+				<div class="box">
+					<h2>Lap Data</h2>
+					<button class="btn" id="btn-nextlap">Next Lap</button>
+					<table>
+						<tr>
+							<td>Lap Time</td> <td><span class="data-lap-time">-</span> sec</td>
+						</tr>
+						<tr>
+							<td>Cur. Lap Time</td> <td><span class="data-lap-curtime">-</span> sec</td>
+						</tr>
+						<tr>
+							<td>Avg Speed</td> <td><span class="data-lap-speed">-</span> kph</td>
+						</tr>
+						<tr>
+							<td>Battery Charge</td><td><span class="data-lap-batt">-</span> mAh</td>
+						</tr>
+						<tr>
+							<td>Array Charge</td><td><span class="data-lap-array">-</span> mAh</td>
+						</tr>
+						<tr>
+							<td>Motor Charge</td><td><span class="data-lap-motor">-</span> mAh</td>
+						</tr>
+						<tr>
+							<td>Average Motor Current</td><td><span class="data-lap-avg-motor-current">-</span> A</td>
+						</tr>
+						<tr>
+							<td>Average Motor Power</td><td><span class="data-lap-avg-motor-power">-</span> W</td>
+						</tr>
+						<tr>
+							<td>Average Array Power</td><td><span class="data-lap-avg-array-power">-</span> W</td>
+						</tr>
+						<tr>
+							<td>Average Batt Power</td><td><span class="data-lap-avg-batt-power">-</span> W</td>
+						</tr>
+					</table>
+					<h2>Odometer</h2>
+						<table>
+							<tr><td>Current Odometer</td><td><span class="data-odometer">0</span> km</td></tr>
+							<tr><td>Set Odometer</td>
+							<td>
+							<div class="input-append">
+								<form id="control-odometer-form" style="padding:0; margin:0">
+									<input id="control-odometer-value" class="smtextbox" type="text" size="3" /><input type="submit" value="Set" class="btn" id="control-odometer-set" />
+								</form>
+							</div>
+							</td></tr>
+							
+						</table>
+				</div>
+				<div class="box">
+					<h2>Trackers</h2>
+					<table>
+						<tr>
+							<td>Total Array Current</td><td><span class="data-tracker-current">-</span> A (batt)</td>
+						</tr>
+                        <tr>
+                   			<td>Total Array Current</td><td><span class="data-tracker-current-calc">-</span> A (trkr)</td>
+                        </tr>
+						<tr>
+							<td>Total Array Power</td><td><span class="data-tracker-power">-</span> W</td>
+						</tr>
+						<tr>
+							<td>Total Array Power HWM</td><td><span class="data-tracker-power-hwm">-</span> W</td>
+						</tr>
+					</table>
+					<h3>Channel #0 (Mid Front)</h3>
+					<table>
+						<tr>
+							<th>Voltage</th><td><span class="data-trackers-voltage-0">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Current</th><td><span class="data-trackers-current-0">-</span> A</td>
+						</tr>
+						<tr>
+							<th>Batt. voltage</th><td><span class="data-trackers-bvoltage-0">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Temperature</th><td><span class="data-trackers-temp-0">-</span> C</td>
+						</tr>
+					</table>
+					<h3>Channel #1 (Mid Back)</h3>
+					<table>
+						<tr>
+							<th>Voltage</th><td><span class="data-trackers-voltage-1">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Current</th><td><span class="data-trackers-current-1">-</span> A</td>
+						</tr>
+						<tr>
+							<th>Batt. voltage</th><td><span class="data-trackers-bvoltage-1">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Temperature</th><td><span class="data-trackers-temp-1">-</span> C</td>
+						</tr>
+					</table>
+					<h3>Channel #2 (Back)</h3>
+					<table>
+						<tr>
+							<th>Voltage</th><td><span class="data-trackers-voltage-2">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Current</th><td><span class="data-trackers-current-2">-</span> A</td>
+						</tr>
+						<tr>
+							<th>Batt. voltage</th><td><span class="data-trackers-bvoltage-2">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Temperature</th><td><span class="data-trackers-temp-2">-</span> C</td>
+						</tr>
+					</table>
+					<h3>Channel #3 (Front)</h3>
+					<table>
+						<tr>
+							<th>Voltage</th><td><span class="data-trackers-voltage-3">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Current</th><td><span class="data-trackers-current-3">-</span> A</td>
+						</tr>
+						<tr>
+							<th>Batt. voltage</th><td><span class="data-trackers-bvoltage-3">-</span> V</td>
+						</tr>
+						<tr>
+							<th>Temperature</th><td><span class="data-trackers-temp-3">-</span> C</td>
+						</tr>
+					</table>
+				
+				</div>
+				</div>
+				
+				<!-- END RIGHT COL-->
+			</div>
+		</div> <!-- /main tab -->
+		
+        <div class="tab-pane row" id="checklist">
+            <div class="span4">
+                <div class="box">
+                    <h2>Motor Controllers</h2>
+                    <span class="ck-tritium_status">Tritium Controller</span>
+                    <span class="ck-ngm_motor_state">NGM Controller</span>
+                </div>
+                <div class="box">
+                    <h2>Trackers</h2>
+                    <span class="ck-tracker_data__1">MPPT 1</span>
+                    <span class="ck-tracker_data__2">MPPT 2</span>
+                    <span class="ck-tracker_data__3">MPPT 3</span>
+                    <span class="ck-tracker_data__4">MPPT 4</span>
+                </div>
+                <div class="box">
+                    <h2>Boards</h2>
+                    <span class="ck-telemetry_latlon">Telemetry GPS</span>
+                    <span class="ck-bp_state">Battery Protection</span>
+                    <span class="ck-secondary_pack unplug">Secondary Pack</span>
+                    <span class="ck-driver_display">DI-Display</span>
+                    <span class="ck-switch_states">DI-Switches</span>
+                    <span class="ck-lights_id">Lights</span>
+                </div>
+            </div>
+            <div class="span4" id="ck-user">
+                <h2>User-checklist</h2>
+                <ol>
+                    <li>Change ballast</li>
+                    <li>Driver water</li>
+                    <li>Driver radio</li>
+                    <li>Driver helmet</li>
+                    <li>Latches</li>
+                    <li>Rearview</li>
+                    <li>Turn Indicators</li>
+                    <li>Horn</li>
+                    <li>Test acceleration</li>
+                    <li>Seamline tape</li>
+                </ol>
+            </div>
+        </div>
+        
+		<div class="tab-pane" id="battery">
+		
+			<div id="template" class="battery-cell">
+				<div class="battery-charge-bar">
+					<span class="charge-text-left">
+						<span class="cell-number"></span>&nbsp;
+						<span class="charge-percent"></span>
+						<span class="soc"></span>
+						<span class="voltage"></span>
+                        <span class="errors">?</span>
+					</span>
+					<span class="charge-text-right">
+						<span class="current"></span>
+						<span class="temp"></span>
+					</span>
+					<div class="battery-charge-filled">
+					</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="span4">
+					<h2>Battery</h2>
+					<table>
+						<tr>
+							<th>State of Charge</th><td><span class="data-batt-soc-pcnt">-</span>%</td>
+						</tr>
+						<tr>
+							<th>Remaining Charge</th><td><span class="data-batt-soc">-</span>Ah</td>
+						</tr>
+						<tr>
+							<th>Min Cell</th><td><span class="data-batt-mincell">-</span>V</td>
+						</tr>
+						<tr>
+							<th>Max Cell</th><td><span class="data-batt-maxcell">-</span>V</td>
+						</tr>
+						<tr>
+							<th>Voltage</th><td><span class="data-batt-voltage">-</span>V</td>
+						</tr>
+						<tr>
+							<th>Current</th><td><span class="data-batt-current">-</span>A</td>
+						</tr>
+					</table>
+                    <h2>Limits</h2>
+					<table>
+						<tr>
+							<th>Current limit (charge)</th><td><span class="data-limit-current-charge">-</span>A</td>
+						</tr>
+						<tr>
+							<th>Current limit (discharge)</th><td><span class="data-limit-current-discharge">-</span>A</td>
+						</tr>
+						<tr>
+							<th>Voltage (min)</th><td><span class="data-limit-volt-min">-</span>V</td>
+						</tr>
+						<tr>
+							<th>Voltage (max)</th><td><span class="data-limit-volt-max">-</span>V</td>
+						</tr>
+						<tr>
+							<th>Temperature limit (charge)</th><td><span class="data-limit-temp-charge">-</span>C</td>
+						</tr>
+						<tr>
+							<th>Temperature limit (discharge)</th><td><span class="data-limit-temp-discharge">-</span>C</td>
+						</tr>
+					</table>
+                    <h2>Equalization</h2>
+                    
+                    <form id="control-eq-form" style="padding:0; margin:0">
+                        <table>
+                            <tr>
+                                <th><label for="control-eq-enable">Enabled</label></th>
+                                <td><input id="control-eq-enable" type="checkbox" /></td>
+                            </tr>
+                            <tr>
+                                <th>Target Voltage</th>
+                                <td><input value="4.200" id="control-eq-value" class="smtextbox" type="text" size="3" /> V</td>
+                            </tr>
+                            <tr>
+                                <th>Discharge rate</th>
+                                <td><input value="0" id="control-eq-rate" class="smtextbox" type="text" size="3" /> %</td>
+                            </tr>
+                        </table>
+                    
+                        
+                        <input type="submit" value="Send Packet" class="btn btn-primary" />
+                        
+                    </form>
+                    
+                    <script>
+
+$("#control-eq-form").submit(function(e){
+    e.preventDefault()
+    
+    var p = {}
+    p.id = packetFormatByName.bp_discharge_set.id
+    p.f = {}
+    
+    p.f.discharge_enable = $("#control-eq-enable").prop("checked")
+    p.f.target_voltage = Math.round(parseFloat($("#control-eq-value").val())*1000)
+    p.f.discharge_rate = Math.round(parseFloat($("#control-eq-rate").val())*2.55)
+    encodePacket(p)
+    
+    console.log(p);
+    sendPacket(p)
+    return false;
+});
+                    </script>
+                    
+				</div>
+				<div class="span8">
+					<div id="cells"></div>
+				</div>
+			</div>
+		</div><!-- END BATTERY -->
+		
+		<div class="tab-pane" id="can">
+			<div class="row">
+				<div class="span6"><!--Begin left column -->
+					<div class="form-horizontal">
+						<h2>Send Packet</h2>
+						<form id="packmon-send-form">
+							<label class="control-label" for="packmon-send-id">Packet ID</label>
+							<input type="text" id="packmon-send-id" />
+							<table>
+								<tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+								<tr>
+									<td><input class="smtextbox" type="text" id="packmon-send-0" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-1" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-2" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-3" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-4" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-5" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-6" /></td>
+									<td><input class="smtextbox" type="text" id="packmon-send-7" /></td>
+								</tr>
+							</table>
+							<input type="submit" id="packmon-yaml-send-raw" class="btn btn-primary" value="Send Packet" />
+						</form>
+					</div>
+					<div>
+						<h2>Send Packet</h2>
+						<form>
+							<label class="control-label" for="packmon-select-id">Packet ID</label>
+							<div class="controls">
+								<select id="packmon-yaml-id">
+									<option value="">Select a packet...</option>
+								</select>
+							</div>
+							<p id="packmon-yaml-desc"></p>
+							<div id="packmon-yaml-data"></div>
+							<table>
+								<tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+								<tr>
+									<td id="packmon-yaml-0"></td>
+									<td id="packmon-yaml-1"></td>
+									<td id="packmon-yaml-2"></td>
+									<td id="packmon-yaml-3"></td>
+									<td id="packmon-yaml-4"></td>
+									<td id="packmon-yaml-5"></td>
+									<td id="packmon-yaml-6"></td>
+									<td id="packmon-yaml-7"></td>
+								</tr>
+							</table>
+							<input type="submit" id="packmon-yaml-send" class="btn btn-primary" value="Send Packet" />
+						</form>
+					</div>
+				</div><!--End left column-->
+				<div class="span6"><!--Begin right column-->
+					<div>
+						<h2>CAN Data</h2>
+						<table id="packets_monitor" class="table table-condensed">
+							<thead>
+							<tr>
+								<th>ID</th>
+								<th>Count</th>
+								<th colspan="8" class="ui-corner-all ui-widget-header">Data</th>
+							</tr>
+							<tr>
+								<th colspan="2"></th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th>
+							</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<h2>CAN Controls</h2>
+						<form class="form-horizontal">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Options</label>
+									<div class="controls">
+										<label class="checkbox">
+											<input type="checkbox" id="control-packetmon-hex" />
+											Display in Hex
+										</label>
+									</div>
+								</div><!--
+								<div class="control-group">
+									<label class="control-label">Packet ID filter</label>
+									<div class="controls">
+										<input type="text" id="control-packetmon-min" value="1" />
+										<input type="text" id="control-packetmon-max" value="2047" />
+									</div>
+								</div>-->
+								<div class="control-group">
+									<label class="control-label" for="reset">Reset</label>
+									<div class="controls">
+										<button class="btn btn-danger" id="control-packetmon-reset">Clear table</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div><!-- END Row -->
+		</div><!-- END CAN -->
+		
+		
+		
+		
+		
+		
+		
+		<div class="tab-pane" id="cande">
+			<div class="row">
+				<div class="span8"><!--Begin left column -->
+				Packet listing
+				<div id="cande-packet-template" class="cande-packet">
+				<h2><span class="cande-name">Name</span> <span style="float:right">(<span class="cande-id"></span> /  <span class="cande-id-hex"></span>)</span></h2>
+					<p><span class="cande-description"></span></p>
+					<div class="row">
+						<div class="span4">
+							<h3>Information</h3>
+							ID: <span class="cande-id"></span>, Count: <span class="cande-count"></span>, RTR: <span class="cande-rtr"></span>
+							
+							<h3>Raw Data</h3>
+						
+							<table>
+							<thead>
+								<tr><td>Byte #</td><td>Data</td></tr>
+							</thead>
+							<tbody class="cande-table-raw">
+							
+							</tbody>
+							</table>
+						
+						</div>
+						<div class="span4">
+							<h3>Decoded Data</h3>
+							<table>
+							<thead>
+								<tr><td>Name</td><td>Value</td><td>Units</td></tr>
+							</thead>
+							<tbody class="cande-table-decoded">
+							
+							</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>
+				<div id="cande-packets">
+					No packets yet
+				</div>
+				
+				</div><!--END left column -->
+				<div class="span4"><!--Begin right column-->
+					<h2>CAN Packets</h2>
+					<form>
+						<label class="control-label" for="cande-yaml-id">Packet ID</label>
+						<div class="controls">
+							<select multiple id="cande-yaml-id">
+							
+							</select>
+						</div>
+					</form>
+				</div><!--END right column-->
+			</div>
+		</div><!--END CAN Decoder-->
+		
+        
+        
+		
+		
+		<div class="tab-pane" id="map">
+		
+			<div id="osmmap" style="height: 400px; width: 940px"></div>			
+			<script type="text/javascript">
+	function Mapper(){
+		var lat=40;
+		var lon=-95;
+		var zoom=4;
+
+		this.map = new OpenLayers.Map ("osmmap", {
+			controls:[
+				new OpenLayers.Control.Navigation(),
+				new OpenLayers.Control.PanZoomBar(),
+				new OpenLayers.Control.ScaleLine({geodesic: true}),
+				new OpenLayers.Control.MousePosition(),                    
+				],
+			maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
+			maxResolution: 156543.0339,
+			numZoomLevels: 19,
+			units: 'mi',
+			projection: new OpenLayers.Projection("EPSG:900913"),
+			displayProjection: new OpenLayers.Projection("EPSG:4326")
+		} );
+
+		layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");
+		layerMapnik.setOpacity(1);
+		this.map.addLayer(layerMapnik); 
+
+		// This is the layer that uses the locally stored tiles
+		var newLayer = new OpenLayers.Layer.OSM("Local Tiles", "maps/tiles/sat/${z}/${x}/${y}.png", {numZoomLevels: 19, alpha: true, isBaseLayer: false});
+		this.map.addLayer(newLayer);
+
+		if( ! this.map.getCenter() ){
+			var lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), this.map.getProjectionObject());
+			this.map.setCenter (lonLat, zoom);
+		}
+
+		var markers = new OpenLayers.Layer.Markers( "Markers" );
+		this.map.addLayer(markers);
+		this.car = new OpenLayers.Marker(new OpenLayers.LonLat(999, 999));
+		markers.addMarker(this.car);
+
+	};
+	Mapper.prototype.moveCar = function(lat, lon){
+		p = this.map.getLayerPxFromViewPortPx(this.map.getPixelFromLonLat(new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), this.map.getProjectionObject())))
+		this.car.moveTo(p)
+	}
+	themap = new Mapper();
+			
+			</script>
+		</div>
+	  
+		</div> <!-- /tab content-->
+    </div> <!-- /container -->
+
+<script type="text/javascript" src="d1handlers.js"></script>
+<script type="text/javascript" src="features.js"></script>
+<script type="text/javascript" src="packetmonitor.js"></script>
+<script type="text/javascript" src="checklist.js"></script>
+  </body>
+</html>

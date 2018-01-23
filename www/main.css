@@ -1,0 +1,235 @@
+.sw-enable, .sw-disable{
+border: 1px solid #666;
+padding:0px 1px;
+display:inline-block;
+margin-bottom: 2px;
+}
+
+
+.sw-enable{
+background-color:#0F0;
+}
+
+.sw-disable{
+background-color:#fff
+}
+
+.unplug{
+    background-color: #888;
+    color: #fff;
+}
+
+.plugged{
+    background-color: #0f0;
+}
+
+.error{
+    background-color: #f00;
+    color: #fff;
+    
+}
+
+#ck-user{
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+#ck-user li{
+    border: 1px solid #aaa;
+    padding: 2px 5px;
+    margin-top: 5px;
+}
+
+.unplug, .plugged, .error{
+    display:inline-block;
+    border: 1px solid #000;
+    margin: 5px 5px;
+    padding: 2px 5px;
+    font-weight:bold;
+}
+
+#container{
+	width: 960px;
+}
+
+/* Top bar defs */
+
+#statusbar{
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 6px;
+	height: auto;
+	border: 2px solid #77a;
+	border-top: none;
+	margin-bottom: 10px;
+}
+
+#statusbar:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#statusbar-left{
+	float:left;
+}
+
+#statusbar-right{
+	float:right;
+}
+
+#statusbar-right > div, #statusbar-left > div{
+	display:inline-block;
+}
+
+
+.connected, .disconnected{
+	border: 1px solid #fff;
+	text-transform:lowercase;
+	padding: 0px 6px;
+	display:block;
+}
+
+.connected{
+	background-color: #0a0;
+}
+.disconnected{
+	background-color: #a00;
+}
+
+.site-title{
+	font-size: 1.1em;
+}
+/* end top bar */
+
+
+/* Defs for statusboxes */
+
+.box{
+	Xborder: 1px solid #aaa;
+	Xmargin: -1px -1px -1px 19;
+	background-color: #f6f6f6;
+	margin-bottom: 20px;
+}
+
+table{
+	width: 100%;
+}
+
+table th{
+	text-align:left;
+}
+
+h2{
+	background-color: #ff7;
+	border-bottom: 1px solid #cc5;
+	font-size: 17px;
+	display:block;
+	line-height: normal;
+}
+
+
+h3{
+	background-color: #ddd;
+	font-size: 14px;
+	display:block;
+	padding: 0px 1px;
+	line-height: normal;
+}
+
+
+/* End statusbox */
+
+.blinkers-haz, .blinkers-left, .blinkers-right{
+	width: 20px;
+	height: 20px;
+	background-image: url("blinkers.gif");
+	display:block;
+}
+
+.blinkers-haz{
+	background-position: 40px 0;
+}
+.blinkers-left{
+	background-position: 0px 0;
+}
+.blinkers-right{
+	background-position: 20px 0;
+}
+
+.graph-normal{
+	height: 150px;
+}
+
+/* Battery */
+
+#cells{
+	max-width:650px;
+}
+.battery-cell{
+	padding:1px;
+	display: inline-block;
+	width:300px;
+	
+}
+.cell-number{
+	float:left;
+}
+.battery-charge-bar{
+	border:1px solid #666;
+	background-color: #aaa;
+}
+.battery-charge-filled{
+	height:20px;
+	width:0;
+		-webkit-transition: all 0.5s ease-in-out;
+		x-moz-transition: all 0.5s ease-in-out;
+		x-o-transition: all 0.5s ease-in-out;
+		x-ms-transition: all 0.5s ease-in-out;	
+		xtransition: all 0.5s ease-in-out;
+}
+.charge-text-left, .charge-text-right{
+	margin:0;
+	height:15px;
+	color:#fff;
+	font-weight: bold;
+	padding:2px;
+	overflow: hidden; 
+	text-shadow: #000 1px 1px 2px;
+}
+.charge-text-left{
+float:left;
+}
+.charge-text-right{
+float:right;
+}
+
+#cell-average{
+	margin:auto;
+	display:block;
+}
+		
+/* End Battery */
+
+#send-speedset input{
+	width: 50px;
+	padding: 0;
+}
+
+
+/* Packet Monitor */
+
+#packets_monitor th, #packets_monitor td{
+	width: 4em;
+}
+
+.smtextbox{
+	width:40px;
+}
+
+#cande-packet-template{
+display:none;
+}

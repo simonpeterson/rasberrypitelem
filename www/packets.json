@@ -1,0 +1,4167 @@
+{
+    "packets": [
+        {
+            "name": "lights_front_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 768
+        }, 
+        {
+            "name": "lights_back_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 769
+        }, 
+        {
+            "name": "dashboard_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 770
+        }, 
+        {
+            "name": "steering_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 771
+        }, 
+        {
+            "name": "bp_control_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 772
+        }, 
+        {
+            "name": "secondary_pack_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 773
+        }, 
+        {
+            "name": "telemetry_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 774
+        }, 
+        {
+            "name": "center_console_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 775
+        }, 
+        {
+            "name": "charger_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 776
+        }, 
+        {
+            "name": "rearview_id", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "mcu_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "fault_code"
+                }
+            ], 
+            "description": "Unique identification packet for each board type", 
+            "file": "board_id.yaml", 
+            "id": 777
+        }, 
+        {
+            "description": "Low frequency BP status update.", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "aux_voltage"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "primary_voltage"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "contactor_tracker_pre"
+                        }, 
+                        {
+                            "name": "contactor_bus"
+                        }, 
+                        {
+                            "name": "contactor_bus_pre"
+                        }, 
+                        {
+                            "name": "contactor_tracker"
+                        }, 
+                        {
+                            "name": "power_is_primary"
+                        }, 
+                        {
+                            "name": "primary_power_enabled"
+                        }, 
+                        {
+                            "name": "aux_charge_enabled"
+                        }, 
+                        {
+                            "name": "car_allowed_on"
+                        }
+                    ], 
+                    "name": "status"
+                }
+            ], 
+            "id": 512, 
+            "name": "bp_state"
+        }, 
+        {
+            "description": "State of charge", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "conversion": 1, 
+                    "type": "float", 
+                    "name": "soc"
+                }, 
+                {
+                    "conversion": 1, 
+                    "type": "float", 
+                    "name": "Ah"
+                }
+            ], 
+            "id": 513, 
+            "name": "bp_soc"
+        }, 
+        {
+            "description": "write state of charge, use with caution", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "conversion": 1, 
+                    "type": "float", 
+                    "name": "Ah"
+                }
+            ], 
+            "id": 529, 
+            "name": "bp_soc_set"
+        }, 
+        {
+            "description": "current draw out of the battery", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "conversion": 1, 
+                    "type": "float", 
+                    "name": "main"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 1, 
+                    "type": "float", 
+                    "name": "tracker"
+                }
+            ], 
+            "id": 514, 
+            "name": "bp_current"
+        }, 
+        {
+            "description": "min and max cell voltages and temperatures", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "max_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "min_temp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "max_cell"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "min_cell"
+                }
+            ], 
+            "id": 515, 
+            "name": "bp_minmax"
+        }, 
+        {
+            "description": "Information for car startup problems.", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "data1"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "data2"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "KILL_REASON_OVERVOLT"
+                        }, 
+                        {
+                            "name": "KILL_REASON_UNDERVOLT"
+                        }, 
+                        {
+                            "name": "KILL_REASON_OVERTEMP"
+                        }, 
+                        {
+                            "name": "KILL_REASON_MODULE_COMM_FAIL"
+                        }, 
+                        {
+                            "name": "KILL_REASON_OVERCURRENT"
+                        }, 
+                        {
+                            "name": "KILL_REASON_PRECHARGE_FAIL"
+                        }, 
+                        {
+                            "name": "KILL_REASON_PRIMARY_POWER_FAIL"
+                        }
+                    ], 
+                    "name": "error_code1"
+                }
+            ], 
+            "id": 516, 
+            "name": "bp_startup_error"
+        }, 
+        {
+            "description": "reports discharge parameters", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "target_voltage"
+                }, 
+                {
+                    "units": "%", 
+                    "type": "uint8_t", 
+                    "name": "discharge_rate"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "discharge_enable"
+                        }
+                    ], 
+                    "name": "flags"
+                }
+            ], 
+            "id": 517, 
+            "name": "bp_discharge"
+        }, 
+        {
+            "description": "sets discharge parameters", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "target_voltage"
+                }, 
+                {
+                    "units": "%", 
+                    "type": "uint8_t", 
+                    "name": "discharge_rate"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "discharge_enable"
+                        }
+                    ], 
+                    "name": "flags"
+                }
+            ], 
+            "id": 533, 
+            "name": "bp_discharge_set"
+        }, 
+        {
+            "description": "reports BP params for temperature", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "charge_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "discharge_temp"
+                }
+            ], 
+            "id": 518, 
+            "name": "bp_temp"
+        }, 
+        {
+            "description": "sets BP params for temperature", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "check"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "charge_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "discharge_temp"
+                }
+            ], 
+            "id": 534, 
+            "name": "bp_temp_set"
+        }, 
+        {
+            "description": "reports BP params for voltage", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage_max"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage_min"
+                }
+            ], 
+            "id": 519, 
+            "name": "bp_volt"
+        }, 
+        {
+            "description": "sets BP params for voltage", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "check"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage_max"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage_min"
+                }
+            ], 
+            "id": 535, 
+            "name": "bp_volt_set"
+        }, 
+        {
+            "description": "reports BP params for current", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "current_max"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "current_min"
+                }
+            ], 
+            "id": 520, 
+            "name": "bp_currentlimit"
+        }, 
+        {
+            "description": "BP Fans", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "RPM", 
+                    "conversion": 1, 
+                    "type": "uint16_t", 
+                    "name": "fan1"
+                }, 
+                {
+                    "units": "RPM", 
+                    "conversion": 1, 
+                    "type": "uint16_t", 
+                    "name": "fan2"
+                }, 
+                {
+                    "units": "RPM", 
+                    "conversion": 1, 
+                    "type": "uint16_t", 
+                    "name": "fan3"
+                }, 
+                {
+                    "units": "RPM", 
+                    "conversion": 1, 
+                    "type": "uint16_t", 
+                    "name": "fan4"
+                }
+            ], 
+            "id": 521, 
+            "name": "bp_fan_info"
+        }, 
+        {
+            "description": "Locally measured temperatures", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "ambient_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "vicor_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_pack_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "precharge_resistor_temp"
+                }
+            ], 
+            "id": 522, 
+            "name": "bp_local_temperature"
+        }, 
+        {
+            "description": "BP light sensor, relitive humidity, and locally meausred currents", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "conversion": 1, 
+                    "type": "uint16_t", 
+                    "name": "light_intensity", 
+                    "uints": "???"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "relitive_humidity"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "int16_t", 
+                    "name": "active_balance_current"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "int16_t", 
+                    "name": "primary_power_current"
+                }
+            ], 
+            "id": 523, 
+            "name": "bp_light_rh_current"
+        }, 
+        {
+            "description": "High voltage node voltages", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vbat_pp"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vbat_bal"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vbat_bus"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vbat_pre_rly"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vbat_pre_bus"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vary_pre_rly"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "vary_pre_bus"
+                }
+            ], 
+            "id": 524, 
+            "name": "bp_hv_nodes"
+        }, 
+        {
+            "description": "Warnings that do not shut off the car", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "battery_lid_open"
+                        }, 
+                        {
+                            "name": "rtc_battery_dead"
+                        }
+                    ], 
+                    "name": "general"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "balance_fuse_blown"
+                        }, 
+                        {
+                            "name": "vicor_input_fuse_blown"
+                        }
+                    ], 
+                    "name": "fuses"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "microcontroller_overtemp"
+                        }, 
+                        {
+                            "name": "vicor_overtemp"
+                        }, 
+                        {
+                            "name": "aux_pack_overtemp"
+                        }, 
+                        {
+                            "name": "precharge_resistor_overtemp"
+                        }, 
+                        {
+                            "name": "vicor_thermistor_unplugged"
+                        }, 
+                        {
+                            "name": "aux_pack_thermistor_unplugged"
+                        }, 
+                        {
+                            "name": "precharge_resistor_thermistor_unplugged"
+                        }
+                    ], 
+                    "name": "temperatures"
+                }
+            ], 
+            "id": 525, 
+            "name": "bp_warning"
+        }, 
+        {
+            "description": "Value of the real time clock in nanoseconds", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "ns", 
+                    "type": "uint64_t", 
+                    "name": "unix_time_nanoseconds"
+                }
+            ], 
+            "id": 526, 
+            "name": "bp_rtc"
+        }, 
+        {
+            "description": "Sets the value of the real time clock in nanoseconds", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "ns", 
+                    "type": "uint64_t", 
+                    "name": "unix_time_nanoseconds"
+                }
+            ], 
+            "id": 527, 
+            "name": "bp_rtc_set"
+        }, 
+        {
+            "description": "sets BP params for current", 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "check"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "current_max"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "current_min"
+                }
+            ], 
+            "id": 536, 
+            "name": "bp_currentlimit_set"
+        }, 
+        {
+            "name": "bp_module__0", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 544, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__1", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 545, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__2", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 546, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__3", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 547, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__4", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 548, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__5", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 549, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__6", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 550, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__7", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 551, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__8", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 552, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__9", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 553, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__10", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 554, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__11", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 555, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__12", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 556, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__13", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 557, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__14", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 558, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__15", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 559, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__16", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 560, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__17", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 561, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__18", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 562, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__19", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 563, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__20", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 564, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__21", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 565, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__22", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 566, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__23", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 567, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__24", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 568, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__25", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 569, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__26", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 570, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__27", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 571, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__28", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 572, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__29", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 573, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__30", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 574, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__31", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 575, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__32", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 576, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__33", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 577, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__34", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 578, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_module__35", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "temperature"
+                }, 
+                {
+                    "units": "%", 
+                    "conversion": 1, 
+                    "type": "uint8_t", 
+                    "name": "discharge"
+                }
+            ], 
+            "id": 579, 
+            "description": "Voltage and temperature for a single module"
+        }, 
+        {
+            "name": "bp_stack_voltages__0", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "sum_of_cells"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vref"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vdd"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "avdd"
+                }
+            ], 
+            "id": 592, 
+            "description": "info about a single LTC6804 chip"
+        }, 
+        {
+            "name": "bp_stack_voltages__1", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "sum_of_cells"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vref"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vdd"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "avdd"
+                }
+            ], 
+            "id": 593, 
+            "description": "info about a single LTC6804 chip"
+        }, 
+        {
+            "name": "bp_stack_voltages__2", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "sum_of_cells"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vref"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "vdd"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "avdd"
+                }
+            ], 
+            "id": 594, 
+            "description": "info about a single LTC6804 chip"
+        }, 
+        {
+            "name": "bp_stack_temperatures__0", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "die_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_1"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_2"
+                }
+            ], 
+            "id": 608, 
+            "description": "temperature measurements for each stack"
+        }, 
+        {
+            "name": "bp_stack_temperatures__1", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "die_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_1"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_2"
+                }
+            ], 
+            "id": 609, 
+            "description": "temperature measurements for each stack"
+        }, 
+        {
+            "name": "bp_stack_temperatures__2", 
+            "offset": 1, 
+            "file": "bp_control.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "die_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_1"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "int16_t", 
+                    "name": "aux_temperature_2"
+                }
+            ], 
+            "id": 610, 
+            "description": "temperature measurements for each stack"
+        }, 
+        {
+            "description": "status of all buttons and rotary encoders on the Center Console", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "magic_a"
+                        }, 
+                        {
+                            "name": "magic_b"
+                        }, 
+                        {
+                            "name": "magic_c"
+                        }, 
+                        {
+                            "name": "magic_d"
+                        }, 
+                        {
+                            "name": "encoder1_btn"
+                        }, 
+                        {
+                            "name": "encoder2_btn"
+                        }
+                    ], 
+                    "name": "buttons"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "encoder1"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "encoder2"
+                }
+            ], 
+            "id": 114, 
+            "file": "center_console.yaml", 
+            "name": "center_console"
+        }, 
+        {
+            "description": "status of all remote control commands", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "command_0"
+                        }, 
+                        {
+                            "name": "command_1"
+                        }, 
+                        {
+                            "name": "command_2"
+                        }, 
+                        {
+                            "name": "command_3"
+                        }, 
+                        {
+                            "name": "command_4"
+                        }, 
+                        {
+                            "name": "command_5"
+                        }, 
+                        {
+                            "name": "command_6"
+                        }, 
+                        {
+                            "name": "command_7"
+                        }
+                    ], 
+                    "name": "commands"
+                }
+            ], 
+            "id": 113, 
+            "file": "center_console.yaml", 
+            "name": "remote_control"
+        }, 
+        {
+            "description": "Info about the FM radio on the Center Console (work in progress)", 
+            "data": [
+                {
+                    "conversion": 0.1, 
+                    "type": "uint8_t", 
+                    "name": "frequency", 
+                    "description": "Decoded frequency based at 88MHz"
+                }
+            ], 
+            "id": 112, 
+            "file": "center_console.yaml", 
+            "name": "radio_info"
+        }, 
+        {
+            "description": "Emergency packet to kill the car", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "board_id"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "error_code"
+                }
+            ], 
+            "id": 32, 
+            "file": "common.yaml", 
+            "name": "kill"
+        }, 
+        {
+            "description": "Packet sent to set the RTC on any applicable boards", 
+            "data": [
+                {
+                    "units": "seconds", 
+                    "type": "int64_t", 
+                    "name": "unix_time"
+                }
+            ], 
+            "id": 33, 
+            "file": "common.yaml", 
+            "name": "set_rtc"
+        }, 
+        {
+            "description": "Packet for debugging FreeRTOS code on any board. Should not be sent in production code", 
+            "file": "common.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "ticks", 
+                    "type": "uint32_t", 
+                    "name": "tick_count"
+                }, 
+                {
+                    "units": "bytes", 
+                    "type": "uint16_t", 
+                    "name": "high_water_mark"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "task_count"
+                }
+            ], 
+            "id": 34, 
+            "name": "freertos_debug_info"
+        }, 
+        {
+            "description": "ADC values from the brake and accelerator pedals.", 
+            "file": "dashboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "accel_pedal_value"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "brake_pedal_value"
+                }
+            ], 
+            "id": 144, 
+            "name": "dashboard_pedal_percentages"
+        }, 
+        {
+            "description": "brake limit status", 
+            "file": "display.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "brakes_on"
+                        }, 
+                        {
+                            "name": "dip_1"
+                        }, 
+                        {
+                            "name": "dip_2"
+                        }
+                    ], 
+                    "name": "switches"
+                }
+            ], 
+            "id": 96, 
+            "name": "driver_display"
+        }, 
+        {
+            "description": "Sets the tire radius for speed calculations.", 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "unused_1"
+                }, 
+                {
+                    "type": "uint32_t", 
+                    "name": "unused_2"
+                }
+            ], 
+            "id": 48, 
+            "name": "fullcurrent_reset"
+        }, 
+        {
+            "description": "Drive command.  This must be sent at a minimum of 4 hz.", 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "RPM", 
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "units": "Amps", 
+                    "type": "float", 
+                    "name": "motor_current"
+                }
+            ], 
+            "id": 49, 
+            "name": "fullcurrent_drive"
+        }, 
+        {
+            "name": "fullcurrent_identification__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "motor_controller_id"
+                }, 
+                {
+                    "type": "uint32_t", 
+                    "name": "serial_number"
+                }
+            ], 
+            "id": 352, 
+            "description": "Motor controller identification information"
+        }, 
+        {
+            "name": "fullcurrent_identification__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "motor_controller_id"
+                }, 
+                {
+                    "type": "uint32_t", 
+                    "name": "serial_number"
+                }
+            ], 
+            "id": 353, 
+            "description": "Motor controller identification information"
+        }, 
+        {
+            "name": "fullcurrent_status_information__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "limit_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "error_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "active_motor"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 354, 
+            "description": "Motor controller status information"
+        }, 
+        {
+            "name": "fullcurrent_status_information__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "limit_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "error_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "active_motor"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 355, 
+            "description": "Motor controller status information"
+        }, 
+        {
+            "name": "fullcurrent_bus_measurement__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "bus_current"
+                }
+            ], 
+            "id": 356, 
+            "description": "Mototr controller bus measurement"
+        }, 
+        {
+            "name": "fullcurrent_bus_measurement__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "bus_current"
+                }
+            ], 
+            "id": 357, 
+            "description": "Mototr controller bus measurement"
+        }, 
+        {
+            "name": "fullcurrent_velocity__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "rpm", 
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "units": "m/s", 
+                    "type": "float", 
+                    "name": "vehicle_velocity"
+                }
+            ], 
+            "id": 358, 
+            "description": "Motor controller velocity measurement"
+        }, 
+        {
+            "name": "fullcurrent_velocity__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "rpm", 
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "units": "m/s", 
+                    "type": "float", 
+                    "name": "vehicle_velocity"
+                }
+            ], 
+            "id": 359, 
+            "description": "Motor controller velocity measurement"
+        }, 
+        {
+            "name": "fullcurrent_phase_current__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_b_current"
+                }, 
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_a_current"
+                }
+            ], 
+            "id": 360, 
+            "description": "Motor controller phase current measurement"
+        }, 
+        {
+            "name": "fullcurrent_phase_current__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_b_current"
+                }, 
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_a_current"
+                }
+            ], 
+            "id": 361, 
+            "description": "Motor controller phase current measurement"
+        }, 
+        {
+            "name": "fullcurrent_motor_voltage_vector__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vd"
+                }
+            ], 
+            "id": 368, 
+            "description": "Motor controller motor voltage vector measurement"
+        }, 
+        {
+            "name": "fullcurrent_motor_voltage_vector__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vd"
+                }
+            ], 
+            "id": 369, 
+            "description": "Motor controller motor voltage vector measurement"
+        }, 
+        {
+            "name": "fullcurrent_motor_current_vector__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "iq"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "id"
+                }
+            ], 
+            "id": 370, 
+            "description": "Motor controller motor current vector measurement"
+        }, 
+        {
+            "name": "fullcurrent_motor_current_vector__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "iq"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "id"
+                }
+            ], 
+            "id": 371, 
+            "description": "Motor controller motor current vector measurement"
+        }, 
+        {
+            "name": "fullcurrent_motor_backemf__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfd"
+                }
+            ], 
+            "id": 372, 
+            "description": "Motor controller motor backEMF measurement / prediction"
+        }, 
+        {
+            "name": "fullcurrent_motor_backemf__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfd"
+                }
+            ], 
+            "id": 373, 
+            "description": "Motor controller motor backEMF measurement / prediction"
+        }, 
+        {
+            "name": "fullcurrent_heatsink_motor_temp__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "motor_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "heatsink_temp"
+                }
+            ], 
+            "id": 374, 
+            "description": "Motor controller heat-sink & motor temperature measurement"
+        }, 
+        {
+            "name": "fullcurrent_heatsink_motor_temp__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "motor_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "heatsink_temp"
+                }
+            ], 
+            "id": 375, 
+            "description": "Motor controller heat-sink & motor temperature measurement"
+        }, 
+        {
+            "name": "fullcurrent_dsp_board_temp__0", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "dsp_board_temp"
+                }, 
+                {
+                    "units": null, 
+                    "type": "float", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 376, 
+            "description": "Motor controlelr board temperature measurement"
+        }, 
+        {
+            "name": "fullcurrent_dsp_board_temp__1", 
+            "offset": 1, 
+            "file": "fullCURRENT.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "dsp_board_temp"
+                }, 
+                {
+                    "units": null, 
+                    "type": "float", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 377, 
+            "description": "Motor controlelr board temperature measurement"
+        }, 
+        {
+            "description": "actual on/off state of front lights", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "turn_left"
+                        }, 
+                        {
+                            "name": "turn_right"
+                        }, 
+                        {
+                            "name": "headlight_left"
+                        }, 
+                        {
+                            "name": "headlight_right"
+                        }
+                    ], 
+                    "name": "light"
+                }
+            ], 
+            "id": 176, 
+            "file": "lights.yaml", 
+            "name": "lights_state_front"
+        }, 
+        {
+            "description": "actual on/off state of rear lights", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "turn_left"
+                        }, 
+                        {
+                            "name": "turn_right"
+                        }, 
+                        {
+                            "name": "brake_left"
+                        }, 
+                        {
+                            "name": "brake_right"
+                        }
+                    ], 
+                    "name": "light"
+                }
+            ], 
+            "id": 177, 
+            "file": "lights.yaml", 
+            "name": "lights_state_rear"
+        }, 
+        {
+            "description": "current that all of the lights draw", 
+            "file": "lights.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_1", 
+                    "unit": "A"
+                }, 
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_2", 
+                    "unit": "A"
+                }, 
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_3", 
+                    "unit": "A"
+                }, 
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_4", 
+                    "unit": "A"
+                }, 
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_5", 
+                    "unit": "A"
+                }, 
+                {
+                    "conversion": 0.01, 
+                    "type": "uint8_t", 
+                    "name": "channel_6", 
+                    "unit": "A"
+                }
+            ], 
+            "id": 181, 
+            "name": "lights_current"
+        }, 
+        {
+            "description": "sent by lights", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "version_number"
+                }
+            ], 
+            "id": 178, 
+            "file": "lights.yaml", 
+            "name": "lights_id"
+        }, 
+        {
+            "description": "C2's packet for a lot of stuff", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "values": {
+                                "0": "reverse", 
+                                "1": "forward"
+                            }, 
+                            "name": "direction", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": "not braking", 
+                                "1": "braking"
+                            }, 
+                            "name": "mechanical_brake", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": "secondary from pack", 
+                                "1": "secondary from bus"
+                            }, 
+                            "name": "emergency_power", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": "motor disabled", 
+                                "1": "motor enabled"
+                            }, 
+                            "name": "motor_enable", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": "braking does not kill motor", 
+                                "1": "braking kils motor"
+                            }, 
+                            "name": "brake_override", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": false, 
+                                "1": true
+                            }, 
+                            "name": "right_blinker", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": false, 
+                                "1": true
+                            }, 
+                            "name": "left_blinker", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "values": {
+                                "0": false, 
+                                "1": true
+                            }, 
+                            "name": "headlights", 
+                            "bitnum": 1
+                        }
+                    ], 
+                    "name": "status1"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "not_used", 
+                            "bitnum": 7
+                        }, 
+                        {
+                            "values": {
+                                "0": "trackers enabled", 
+                                "1": "trackers disabled"
+                            }, 
+                            "name": "tracker_disable", 
+                            "bitnum": 1
+                        }
+                    ], 
+                    "name": "status2"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "accelerator"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "regen"
+                }
+            ], 
+            "id": 16, 
+            "file": "ngm.yaml", 
+            "name": "ngm_drive"
+        }, 
+        {
+            "description": "NGM motor controller state", 
+            "file": "ngm.yaml", 
+            "endian": "big", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "status"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "speed"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "current"
+                }
+            ], 
+            "id": 81, 
+            "name": "ngm_motor_state"
+        }, 
+        {
+            "description": "Rearview control packet", 
+            "file": "rearview.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "display1", 
+                    "description": "Video feed that display 1 is connected to"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "display2", 
+                    "description": "Video feed that display 2 is connected to"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "display3", 
+                    "description": "Video feed that display 3 is connected to"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "display4", 
+                    "description": "Video feed that display 4 is connected to"
+                }, 
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "display1_enable"
+                        }, 
+                        {
+                            "name": "display2_enable"
+                        }, 
+                        {
+                            "name": "display3_enable"
+                        }, 
+                        {
+                            "name": "display4_enable"
+                        }, 
+                        {
+                            "name": "display1_override"
+                        }, 
+                        {
+                            "name": "display2_override"
+                        }, 
+                        {
+                            "name": "display3_override"
+                        }, 
+                        {
+                            "name": "display4_override"
+                        }
+                    ], 
+                    "name": "display_settings"
+                }
+            ], 
+            "id": 192, 
+            "name": "rearview_control"
+        }, 
+        {
+            "description": "secondary pack temperature", 
+            "file": "SecondaryPack.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "internal_temp"
+                }
+            ], 
+            "id": 336, 
+            "name": "packtemp"
+        }, 
+        {
+            "description": "status of everything on the wheel", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "horn"
+                        }, 
+                        {
+                            "name": "cruise_acc"
+                        }, 
+                        {
+                            "name": "cruise_dec"
+                        }, 
+                        {
+                            "name": "turn_left"
+                        }, 
+                        {
+                            "name": "turn_right"
+                        }, 
+                        {
+                            "name": "magic_1"
+                        }, 
+                        {
+                            "name": "magic_2"
+                        }, 
+                        {
+                            "name": "push_to_talk"
+                        }
+                    ], 
+                    "name": "switches"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "accelerator"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "regen"
+                }
+            ], 
+            "id": 64, 
+            "file": "steering.yaml", 
+            "name": "steering"
+        }, 
+        {
+            "description": "status of switches and pots", 
+            "file": "switchboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "direction_fwd"
+                        }, 
+                        {
+                            "name": "direction_rev"
+                        }, 
+                        {
+                            "name": "boosh"
+                        }, 
+                        {
+                            "name": "cruise"
+                        }, 
+                        {
+                            "name": "hazards"
+                        }, 
+                        {
+                            "name": "magic1"
+                        }, 
+                        {
+                            "name": "magic2"
+                        }, 
+                        {
+                            "name": "console"
+                        }
+                    ], 
+                    "name": "switches"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "console_bkl_pot"
+                }, 
+                {
+                    "type": "uint8_t", 
+                    "name": "display_bkl_pot"
+                }
+            ], 
+            "id": 90, 
+            "name": "switch_states"
+        }, 
+        {
+            "description": "directly controls light states", 
+            "file": "switchboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "turn_left"
+                        }, 
+                        {
+                            "name": "turn_right"
+                        }, 
+                        {
+                            "name": "brake_left"
+                        }, 
+                        {
+                            "name": "brake_right"
+                        }, 
+                        {
+                            "name": "brake"
+                        }, 
+                        {
+                            "name": "headlights"
+                        }
+                    ], 
+                    "name": "lights"
+                }
+            ], 
+            "id": 91, 
+            "name": "lights_control"
+        }, 
+        {
+            "description": "speed of car in meters per second", 
+            "file": "switchboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "speed"
+                }
+            ], 
+            "id": 92, 
+            "name": "car_speed"
+        }, 
+        {
+            "description": "cruise control status", 
+            "file": "switchboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "speed_limit"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "speed_target"
+                }
+            ], 
+            "id": 93, 
+            "name": "cruise_info"
+        }, 
+        {
+            "description": "cruise control parameters set", 
+            "file": "switchboard.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "p"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "i"
+                }
+            ], 
+            "id": 94, 
+            "name": "cruise_param_set"
+        }, 
+        {
+            "description": "status of all di switches", 
+            "file": "switchboard.yaml", 
+            "endian": "big", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "boosh"
+                        }, 
+                        {
+                            "name": "magic"
+                        }, 
+                        {
+                            "name": "override"
+                        }, 
+                        {
+                            "name": "hazards"
+                        }, 
+                        {
+                            "name": "brake"
+                        }, 
+                        {
+                            "values": {
+                                "0": "reverse", 
+                                "1": "forward"
+                            }, 
+                            "name": "direction"
+                        }, 
+                        {
+                            "values": {
+                                "0": "motor disabled", 
+                                "1": "motor enabled"
+                            }, 
+                            "name": "motor_enable"
+                        }
+                    ], 
+                    "name": "switches"
+                }
+            ], 
+            "id": 21, 
+            "name": "c3_di_switches"
+        }, 
+        {
+            "description": "Turn signals from the steering wheel", 
+            "file": "switchboard.yaml", 
+            "endian": "big", 
+            "data": [
+                {
+                    "type": "bitfield", 
+                    "bits": [
+                        {
+                            "name": "left_blinker", 
+                            "bitnum": 1
+                        }, 
+                        {
+                            "name": "right_blinker", 
+                            "bitnum": 1
+                        }
+                    ], 
+                    "name": "flags"
+                }
+            ], 
+            "id": 160, 
+            "name": "c3_lights_blinkers"
+        }, 
+        {
+            "description": "GPS location of the car", 
+            "file": "telemetry.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "lat"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "lon"
+                }
+            ], 
+            "id": 1728, 
+            "name": "telemetry_latlon"
+        }, 
+        {
+            "description": "GPS velocity vector of the car", 
+            "file": "telemetry.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "heading"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "velocity", 
+                    "unit": "m/s"
+                }
+            ], 
+            "id": 1729, 
+            "name": "telemetry_heading"
+        }, 
+        {
+            "description": "GPS info", 
+            "file": "telemetry.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "num_sats"
+                }
+            ], 
+            "id": 1730, 
+            "name": "telemetry_gps"
+        }, 
+        {
+            "name": "tracker_data__0", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1536, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__1", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1537, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__2", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1538, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__3", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1539, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__4", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1540, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__5", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1541, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__6", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1542, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_data__7", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "array_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "conversion": 0.001, 
+                    "type": "uint16_t", 
+                    "name": "array_current"
+                }, 
+                {
+                    "units": "V", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "battery_voltage"
+                }, 
+                {
+                    "units": "C", 
+                    "conversion": 0.01, 
+                    "type": "uint16_t", 
+                    "name": "temperature"
+                }
+            ], 
+            "id": 1543, 
+            "description": "Tracker data (on RTR only)"
+        }, 
+        {
+            "name": "tracker_enable__0", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "enable"
+                }
+            ], 
+            "id": 1552, 
+            "description": "enable/disable trackers"
+        }, 
+        {
+            "name": "tracker_enable__1", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "enable"
+                }
+            ], 
+            "id": 1553, 
+            "description": "enable/disable trackers"
+        }, 
+        {
+            "name": "tracker_enable__2", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "enable"
+                }
+            ], 
+            "id": 1554, 
+            "description": "enable/disable trackers"
+        }, 
+        {
+            "name": "tracker_enable__3", 
+            "offset": 1, 
+            "file": "trackers.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint8_t", 
+                    "name": "enable"
+                }
+            ], 
+            "id": 1555, 
+            "description": "enable/disable trackers"
+        }, 
+        {
+            "description": "Tritium Motor Drive Command", 
+            "file": "tritium.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "motor_current"
+                }
+            ], 
+            "id": 289, 
+            "name": "tritium_motor_drive"
+        }, 
+        {
+            "description": "Tritium Motor Power Command", 
+            "file": "tritium.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "reserved"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "bus_current"
+                }
+            ], 
+            "id": 290, 
+            "name": "tritium_motor_power"
+        }, 
+        {
+            "description": "Tritium Reset Command", 
+            "file": "tritium.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "float", 
+                    "name": "unused1"
+                }, 
+                {
+                    "type": "float", 
+                    "name": "unused2"
+                }
+            ], 
+            "id": 291, 
+            "name": "tritium_reset"
+        }, 
+        {
+            "description": "WS RIGHT Identification Information", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "tritium_id"
+                }, 
+                {
+                    "type": "uint32_t", 
+                    "name": "serial_number"
+                }
+            ], 
+            "id": 320, 
+            "name": "wsr_identification"
+        }, 
+        {
+            "description": "WS RIGHT Status Information", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "limit_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "error_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "active_motor"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 321, 
+            "name": "wsr_status_information"
+        }, 
+        {
+            "description": "WS RIGHT Bus Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "bus_current"
+                }
+            ], 
+            "id": 322, 
+            "name": "wsr_bus_measurement"
+        }, 
+        {
+            "description": "WS RIGHT Velocity Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "rpm", 
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "units": "m/s", 
+                    "type": "float", 
+                    "name": "vehicle_velocity"
+                }
+            ], 
+            "id": 323, 
+            "name": "wsr_velocity"
+        }, 
+        {
+            "description": "WS RIGHT Phase Current Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_b_current"
+                }, 
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_a_current"
+                }
+            ], 
+            "id": 324, 
+            "name": "wsr_phase_current"
+        }, 
+        {
+            "description": "WS RIGHT Motor Voltage Vector Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vd"
+                }
+            ], 
+            "id": 325, 
+            "name": "wsr_motor_voltage_vector"
+        }, 
+        {
+            "description": "WS RIGHT Motor Current Vector Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "iq"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "id"
+                }
+            ], 
+            "id": 326, 
+            "name": "wsr_motor_current_vector"
+        }, 
+        {
+            "description": "WS RIGHT Motor BackEMF Measurement / Prediction", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfd"
+                }
+            ], 
+            "id": 327, 
+            "name": "wsr_motor_backemf"
+        }, 
+        {
+            "description": "WS RIGHT 15 and 1.65 Voltage Rail Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "reference_165v"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_15v"
+                }
+            ], 
+            "id": 328, 
+            "name": "wsr_15_165_voltage_rail"
+        }, 
+        {
+            "description": "WS RIGHT 2.5V and 1.2V Voltage Rail Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_12v"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_25v"
+                }
+            ], 
+            "id": 329, 
+            "name": "wsr_25_12_voltage_rail"
+        }, 
+        {
+            "description": "WS RIGHT Heat-sink & Motor Temperature Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "motor_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "heatsink_temp"
+                }
+            ], 
+            "id": 331, 
+            "name": "wsr_heatsink_motor_temp"
+        }, 
+        {
+            "description": "WS RIGHT DPS Board Temperature Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "dsp_board_temp"
+                }, 
+                {
+                    "units": null, 
+                    "type": "float", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 332, 
+            "name": "wsr_dsp_board_temp"
+        }, 
+        {
+            "description": "WS LEFT Identification Information", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint32_t", 
+                    "name": "tritium_id"
+                }, 
+                {
+                    "type": "uint32_t", 
+                    "name": "serial_number"
+                }
+            ], 
+            "id": 256, 
+            "name": "wsl_identification"
+        }, 
+        {
+            "description": "WS LEFT Status Information", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "type": "uint16_t", 
+                    "name": "limit_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "error_flags"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "active_motor"
+                }, 
+                {
+                    "type": "uint16_t", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 257, 
+            "name": "wsl_status_information"
+        }, 
+        {
+            "description": "WS LEFT Bus Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bus_voltage"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "bus_current"
+                }
+            ], 
+            "id": 258, 
+            "name": "wsl_bus_measurement"
+        }, 
+        {
+            "description": "WS LEFT Velocity Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "rpm", 
+                    "type": "float", 
+                    "name": "motor_velocity"
+                }, 
+                {
+                    "units": "m/s", 
+                    "type": "float", 
+                    "name": "vehicle_velocity"
+                }
+            ], 
+            "id": 259, 
+            "name": "wsl_velocity"
+        }, 
+        {
+            "description": "WS LEFT Phase Current Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_b_current"
+                }, 
+                {
+                    "units": "A rms", 
+                    "type": "float", 
+                    "name": "phase_a_current"
+                }
+            ], 
+            "id": 260, 
+            "name": "wsl_phase_current"
+        }, 
+        {
+            "description": "WS LEFT Motor Voltage Vector Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "vd"
+                }
+            ], 
+            "id": 261, 
+            "name": "wsl_motor_voltage_vector"
+        }, 
+        {
+            "description": "WS LEFT Motor Current Vector Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "iq"
+                }, 
+                {
+                    "units": "A", 
+                    "type": "float", 
+                    "name": "id"
+                }
+            ], 
+            "id": 262, 
+            "name": "wsl_motor_current_vector"
+        }, 
+        {
+            "description": "WS LEFT Motor BackEMF Measurement / Prediction", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfq"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "bemfd"
+                }
+            ], 
+            "id": 263, 
+            "name": "wsl_motor_backemf"
+        }, 
+        {
+            "description": "WS LEFT 15 and 1.65 Voltage Rail Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "reference_165v"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_15v"
+                }
+            ], 
+            "id": 264, 
+            "name": "wsl_15_165_voltage_rail"
+        }, 
+        {
+            "description": "WS LEFT 2.5V and 1.2V Voltage Rail Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_12v"
+                }, 
+                {
+                    "units": "V", 
+                    "type": "float", 
+                    "name": "supply_25v"
+                }
+            ], 
+            "id": 265, 
+            "name": "wsl_25_12_voltage_rail"
+        }, 
+        {
+            "description": "WS LEFT Heat-sink & Motor Temperature Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "motor_temp"
+                }, 
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "heatsink_temp"
+                }
+            ], 
+            "id": 267, 
+            "name": "wsl_heatsink_motor_temp"
+        }, 
+        {
+            "description": "WS LEFT DPS Board Temperature Measurement", 
+            "file": "wavesculptor.yaml", 
+            "endian": "little", 
+            "data": [
+                {
+                    "units": "C", 
+                    "type": "float", 
+                    "name": "dsp_board_temp"
+                }, 
+                {
+                    "units": null, 
+                    "type": "float", 
+                    "name": "reserved"
+                }
+            ], 
+            "id": 268, 
+            "name": "wsl_dsp_board_temp"
+        }
+    ]
+}
